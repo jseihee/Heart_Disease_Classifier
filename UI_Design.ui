@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form</class>
+ <widget class="QWidget" name="form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data science with a heart</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>WindowICON.jpg</normaloff>WindowICON.jpg</iconset>
+  </property>
+  <property name="toolTip">
+   <string extracomment="Female or male"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(238, 238, 238)</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>452</width>
+     <height>310</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_BP">
+        <property name="toolTip">
+         <string>Mesaured in mmHG. 
+High blood pressure = 140mmHg and above</string>
+        </property>
+        <property name="text">
+         <string>Resting blood pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_HR">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QComboBox" name="comboBox_EIA">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Please select...</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Negative</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Positive</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QComboBox" name="comboBox_CMBV">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_STD">
+        <property name="toolTip">
+         <string>Induced by exercise relative to rest.</string>
+        </property>
+        <property name="text">
+         <string>ST depression</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_Thal">
+        <property name="toolTip">
+         <string>Thallium scintigraphy</string>
+        </property>
+        <property name="text">
+         <string>Thalium test</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Clear</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLineEdit" name="lineEdit_STP">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_EIA">
+        <property name="toolTip">
+         <string>Negative is no exercised induced angina. Positive signifies there is.</string>
+        </property>
+        <property name="text">
+         <string>Exercise induced angina</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QComboBox" name="comboBox_ECG">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_ECG">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Resting electrocardiographic results&lt;/p&gt;&lt;p&gt;  • 0 = Normal &lt;/p&gt;&lt;p&gt;  • 1 = Abnormal ST-T wave &lt;/p&gt;&lt;p&gt;  • 2 = Showing probable or definite left ventricular hypertrophy&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Resting ECG</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="label_CMBV">
+        <property name="toolTip">
+         <string>Number of major vessels colored by fluoroscopy.</string>
+        </property>
+        <property name="text">
+         <string>Coloured major blood vessels</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="lineEdit_BP">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="comboBox_STS">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Upsloping</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Horizontal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Downsloping</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_Age">
+        <property name="toolTip">
+         <string>Age of patient in years</string>
+        </property>
+        <property name="text">
+         <string>Age</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_CP">
+        <property name="toolTip">
+         <string>4 levels to choose from</string>
+        </property>
+        <property name="text">
+         <string>Chest pain type</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit_Age">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QComboBox" name="comboBox_CP">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="currentText">
+         <string/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <property name="duplicatesEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Typical angina</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Atypical angina</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Non-angina pain</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Asymptomatic</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_Sex">
+        <property name="toolTip">
+         <string>Gender of patient</string>
+        </property>
+        <property name="text">
+         <string>Sex</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_FBS">
+        <property name="toolTip">
+         <string>Great then 120 mg/dL a possible factor
+Higher than 126 mg/dL points to diabetes</string>
+        </property>
+        <property name="text">
+         <string>Fasting blood sugar &gt; 120mg/dL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_Chol">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_HR">
+        <property name="toolTip">
+         <string>Measured in bpm</string>
+        </property>
+        <property name="text">
+         <string>Max heart rate</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="label_STS">
+        <property name="toolTip">
+         <string>The slope of the peak exercise ST segment</string>
+        </property>
+        <property name="text">
+         <string>ST slope</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QComboBox" name="comboBox_Thal">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Normal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fixed defect</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Reversable defect</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_Sex">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_Chol">
+        <property name="toolTip">
+         <string>Serum cholestoral (mg/dL)
+Higher than 200mg/dL is concerning</string>
+        </property>
+        <property name="text">
+         <string>Cholesterol</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QComboBox" name="comboBox_FBS">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255)</string>
+        </property>
+        <property name="placeholderText">
+         <string>Please select...</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>False</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>True</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_Desc">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fill out the following form. The calculated results will show whether or not the patient is showing strong correlation for a heart disease diagnosis. &lt;span style=&quot; font-weight:700;&quot;&gt;Unknown details may be left blank.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
